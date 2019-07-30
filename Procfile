@@ -1,1 +1,1 @@
-web : gunicorn instabook.wsgi --log-file -
+web: gunicorn instabook.wsgi --log-file -

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block contents %}
+<h3 class="login">아이디 또는 패스워드가 잘못되었습니다.당신이 회원가입을 안 했을 확률이 높습니다.</h3>
+
+<a id='aid' href="{% url 'home' %}">
+    <button href="{% url 'home' %}" type="button" class="btn btn-primary">다시 로그인하러가기.</button>
+</a>
+{% endblock %}

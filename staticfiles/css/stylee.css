@@ -1,0 +1,65 @@
+
+@font-face { font-family: 'SangSangFlowerRoad'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/SangSangFlowerRoad.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+
+@font-face { font-family: 'GyeonggiBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'InkLipquid'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'BMJUA'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+
+.main{
+    font-family: 'SangSangFlowerRoad';
+    /*font-weight: bold;*/
+    font-size: 5rem;
+}
+
+.signup {
+    font-family: 'GyeonggiBatang';
+    font-weight: bold;
+}
+
+
+.form-control{
+    font-family: 'GyeonggiBatang';
+    /*font-weight: 600;*/
+    width: 25%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.loginform{
+    font-family: 'GyeonggiBatang';
+}
+
+#aid{
+    font-size: 1.5rem;
+}
+
+.navbar-brand{
+    font-size: 3.5rem !important;    
+}
+.navbar-nav{
+    font-size: 2rem !important; 
+    font-family: 'InkLipquid'; 
+}
+
+.login{
+    font-family: 'GyeonggiBatang';
+}
+.bold{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.impo{
+    font-size: 1.5rem !important;
+}
+
+.hi{
+    background-color: #e9e7b4 !important;
+}
+
+body{
+    font-family: 'BMJUA';
+}

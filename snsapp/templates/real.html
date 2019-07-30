@@ -1,0 +1,64 @@
+{% extends 'base2.html' %}
+
+{% load static %}
+
+{% block contents %}
+
+
+
+    <div class="album py-5 bg-light">
+        
+        <div class="container">
+                <h2>STORY</h2>
+          <div class="row">
+            {% for a in posts %}
+                  <div class="col-md-4">
+                      <div class="card mb-4 shadow-sm">
+                        <img src = "{{a.img}}" width = "100%"  height = "225">
+                        <div class="card-body">
+                            <h3 class="card-text">{{a.title }}</h3>
+                            <p class="card-text">
+                              <br>
+                              {{ a.summary }}<a href = "{% url 'detail' a.id %}">...more</a>
+                              <br>
+                              <a href = "{% url 'update' a.id %}">수정</a>
+                              <a href = "{% url 'delete' a.id %}">삭제</a>
+                              <br>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <small class="text-muted">{{ a.date }}</small>
+                              <small class="text-muted">{{ facilities.address }}</small> 
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      {% endfor %}
+          
+                  </div>
+              
+        </div>
+        <center>
+        {% if posts.has_previous %}
+        <a style = "font-size : 1.5rem;" href="?page=1">First</a>
+        <a href="?page={{posts.previous_page_number}}"> << </a>
+        {% endif %}
+
+        <span>{{posts.number}}</span>
+        <span>of</span>
+        <span>{{posts.paginator.num_pages}}</span>
+
+        {% if posts.has_next %}
+        <a href="?page={{posts.nex_page_number}}"> >> </a>
+        <a style = "font-size : 1.5rem;" href="?page={{posts.paginator.num_pages}}"> LAST </a>
+        {% endif %}
+        </center>
+    </div> 
+
+
+
+   
+  
+
+{% endblock %}
+
+

@@ -61,7 +61,8 @@
 }
 
 body{
-    font-family: 'BMJUA';
+    font-family: 'BMJUA';   
+   
 }
 
 #footer {
@@ -70,6 +71,12 @@ body{
     left: 0!important;
     bottom: 0 !important;
     width: 100% !important;
-    position: relative !important;
+
     background: #aaae7e !important;
 }
+
+.img-fluid {
+    max-width: 100px !important;
+    height: auto !important;
+}
+

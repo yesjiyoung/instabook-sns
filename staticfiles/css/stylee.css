@@ -63,3 +63,13 @@
 body{
     font-family: 'BMJUA';
 }
+
+#footer {
+    text-align: center!important;
+    padding: 15px 0!important;
+    left: 0!important;
+    bottom: 0 !important;
+    width: 100% !important;
+    position: relative !important;
+    background: #aaae7e !important;
+}
